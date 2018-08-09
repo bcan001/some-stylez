@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- #adding bootstrap for now so stuff doesn't look like crap while building -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7349256/6794392/css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  
+</html>
